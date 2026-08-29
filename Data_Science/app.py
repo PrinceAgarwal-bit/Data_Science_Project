@@ -1,4 +1,5 @@
 import streamlit as st
+
 from pages import home, grammar_fun, reading_translation
 
 st.set_page_config(
@@ -6,6 +7,18 @@ st.set_page_config(
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
+)
+
+# Hide Streamlit's automatic page navigation
+st.markdown(
+    """
+    <style>
+    [data-testid="stSidebarNav"] {
+        display: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
 PAGES = {
