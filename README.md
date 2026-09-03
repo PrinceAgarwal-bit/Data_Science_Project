@@ -68,7 +68,7 @@ The `secrets.toml` file is excluded from GitHub using `.gitignore`.
 Clone the repository and install the required packages:
 
 ``` bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/PrinceAgarwal-bit/Data_Science_Project
 cd Data_Science
 pip install -r requirements.txt
 ```
