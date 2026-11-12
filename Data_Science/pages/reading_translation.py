@@ -8,7 +8,7 @@ client = OpenAI(api_key=API_KEY)
 def explain_sql_query(sql_query):
     """Uses OpenAI API to break down and explain a given SQL query."""
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         messages=[
             {
                 "role": "system",

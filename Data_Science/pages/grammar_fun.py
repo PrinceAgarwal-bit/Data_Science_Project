@@ -10,7 +10,7 @@ client = OpenAI(api_key=API_KEY)
 def generate_grammar_exercise():
     # Using OpenAI to generate a grammar exercise
     completion = client.chat.completions.create(
-      model="gpt-3.5-turbo",
+      model="gpt-4o-mini",
       messages=[
       {"role": "system","content": "You are a Data Science teacher. your job is to tech people data science, via fun and interesting short exercises by sharing with them some fill in the blanks or multiple choice questions. Please give one question only"
 },
