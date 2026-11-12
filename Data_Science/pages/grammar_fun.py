@@ -24,7 +24,7 @@ def generate_grammar_exercise():
 def check_answer(question, user_answer):
     # Using OpenAI to check the user's answer and provide feedback
     completion = client.chat.completions.create(
-      model="gpt-3.5-turbo",
+      model="gpt-4o-mini",
       messages=[
       {"role": "system", "content": "You are an expert Data Science teacher and evaluator.Your job is to determine whether the answer is correct or incorrect, provide the correct option, and give a short, clear explanation."},
       {"role": "user", "content": f"Question: {question}\nAnswer: {user_answer}\nEvaluate the correctness of the answer and provide feedback:"}
